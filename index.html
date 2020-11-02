@@ -1,6 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+	 <link rel="stylesheet" href="/css/common.css?v=e10fa9d" />
+
+    <link rel="stylesheet" href="/css/home.css?v=e10fa9d" id="home-css" />
+
 	<meta charset="utf-8">
 	<meta content="width=device-width, initial-scale=1, minimum-scale=1, user-scalable=no, minimal-ui" name="viewport">
 	<meta content="yes" name="apple-mobile-web-app-capable">
@@ -61,11 +65,15 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <br>
 
-<!-- Auto width -->
- <a href="https://github.com/pwn20wndstuff/Undecimus/releases/download/v4.1.1/Undecimus-v4.1.1.ipa">
-<button class="btn"><i class="fa fa-download"></i> Download</button>
 
+
+<!-- Auto width -->
+ <a href="itms-services://?action=download-manifest&url=https://ipa-apps.me/plist/Unc0ver.plist">
+<button class="btn"><i class="fa fa-download"></i> Download</button>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Style -->
+
 <style>
 
 .btn {
@@ -82,9 +90,141 @@
   width: 100%;
   max-width: 200px;
 }
+$footer-text-color: #d9d9d9;
+
+footer {
+  background-color: $footer-background-color;
+  color: $footer-text-color;
+  font-size: em(16);
+
+  padding-top: 24px;
+  padding-bottom: 14px;
+
+  padding-left: 20px;
+  padding-right: 20px;
+
+  .container {
+    @include outer-container;
+
+    .footer-col:nth-child(1),
+    .footer-col:nth-child(2) {
+      @include span-columns(4);
+    }
+    .footer-col:nth-child(3),
+    .footer-col:nth-child(4) {
+      @include span-columns(2);
+    }
+    @include media($mobile) {
+      .footer-col:nth-child(1),
+      .footer-col:nth-child(2),
+      .footer-col:nth-child(3),
+      .footer-col:nth-child(4) {
+        @include span-columns(2);
+        @include omega(2n);
+      }
+      .footer-col:nth-child(1),
+      .footer-col:nth-child(2) {
+        display: none;
+      }
+    }
+  }
+
+  h3 {
+    margin-top: 14px;
+    margin-bottom: 16px;
+  }
+  a {
+    color: $footer-text-color;
+    text-decoration: none;
+
+    &:hover {
+      color: darken($footer-text-color, 12%);
+    }
+  }
+
+  .content {
+    dl {
+
+    }
+    dt {
+      margin-top: 18px;
+      font-size: em(16);
+      line-height: 1.2;
+    }
+    dd {
+      margin-top: 4px;
+      text-align: left;
+      font-size: em(12);
+    }
+    ul {
+      list-style-type: none;
+    }
+    li {
+      margin: 5px 0;
+    }
+  }
+
+  .more {
+    margin: 16px 0;
+    text-align: center;
+    line-height: em(26);
+
+    a {
+      display: inline-block;
+      background-color: #777777;
+      height: 28px;
+      padding: 1px 10px 1px 9px;
+      border-radius: 4px;
+      font-size: 15px;
+    }
+  }
+
+  .copyright {
+    font-size: 14px;
+    text-align: center;
+    margin: 2px 0 10px;
+  }
+
+  .love {
+    font-size: 11px;
+    text-align: center;
+    margin-bottom: 10px;
+    i {
+      display: inline-block;
+      span {
+        @include hide-text;
+        display: inline-block;
+        width: 0;
+      }
+    }
+  }
+}
 
 
 </style>
+<br>
+
+<br>
+<!-- Start of shorte.st banner code --> 
+<a href="http://join-shortest.com/ref/035d4b20b0?user-type=new"><img src="https://static.shorte.st/bundles/smeuser/img/referral_banners/350x19.png?2020-02-19.0" title="Share your links and earn real money" width="350" height="19" #ref-menu</a> 
+<!-- End of shorte.st banner code -->
+
+<br>
+<br>
+<br>
+
+        <div class="more">
+      
+
+<div class="container">
+    <div class="copyright">© 2020 Pixel - All rights reserved</div>
+    <div class="love">Made with <i class="icomoon-heart"><span>love</span></i> in <a href="https://www.openstreetmap.org/relation/3679872#map=8/26.537/45.516" target="_blank" rel="noopener noreferrer">Saudi , Qassim</a>.</div>
+    
+</div>
+  
+<br>
+
+</div>
 </center>
 </div>
 </body>
